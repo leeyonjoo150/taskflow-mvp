@@ -7,7 +7,7 @@ def test_read_root():
     """헬스체크 테스트"""
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json()["message"] == "TaskFlow MVP is running!"
+    assert response.json()["message"] == "TaskFlow MVP is running!ver.2"
 
 
 def test_create_todo():
